@@ -6,6 +6,7 @@ function AddProductForm({ onSave, onCancel }) {
     price: "",
     stock: "",
     category: "",
+    description: "",
   });
 
   const handleChange = (e) => {
@@ -62,6 +63,14 @@ function AddProductForm({ onSave, onCancel }) {
         value={form.category}
         onChange={handleChange}
         placeholder="Category"
+        className="w-full border px-3 py-2 rounded"
+        required
+      />
+      <input
+        name="description"
+        value={form.description}
+        onChange={handleChange}
+        placeholder="Description"
         className="w-full border px-3 py-2 rounded"
         required
       />
