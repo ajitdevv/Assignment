@@ -56,7 +56,7 @@ function ProductList() {
     <div className="p-6">
       <div className="flex justify-between items-center mb-4">
         <SearchBar search={search} setSearch={setSearch} setPage={setPage} />
-{/* asdfdsf */}
+
         <Link
           to="/add"
           className="px-4 py-2 bg-green-600 text-white rounded cursor-pointer"
