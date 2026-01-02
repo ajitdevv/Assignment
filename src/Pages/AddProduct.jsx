@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import AddProductForm from "../Components/AddProductForm";
-import { ProductContext } from "../context/ProductContext";
+import AddProductForm from "../Components/AddProductForm.jsx";
+import { ProductContext } from "../context/ProductContext.jsx";
 
 function AddProduct() {
   const navigate = useNavigate();

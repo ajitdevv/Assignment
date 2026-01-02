@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
-import ProductsTable from "../Components/ProductsTable";
-import CardProduct from "../Components/CardProduct";
-import SearchBar from "../Components/SearchBar";
-import { ProductContext } from "../context/ProductContext";
+import ProductsTable from "../Components/ProductsTable.jsx";
+import CardProduct from "../Components/CardProduct.jsx";
+import SearchBar from "../Components/SearchBar.jsx";
+import { ProductContext } from "../context/ProductContext.jsx";
 
 function ProductList() {
   const { products } = useContext(ProductContext);

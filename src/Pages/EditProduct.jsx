@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import EditProductForm from "../Components/EditProductForm";
-import { ProductContext } from "../context/ProductContext";
+import EditProductForm from "../Components/EditProductForm.jsx";
+import { ProductContext } from "../context/ProductContext.jsx";
 
 function EditProduct() {
   const { id } = useParams();

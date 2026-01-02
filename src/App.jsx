@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import ProductList from "./Pages/ProductList";
-import AddProduct from "./Pages/AddProduct";
-import EditProduct from "./pages/EditProduct";
+import ProductList from "./Pages/ProductList.jsx";
+import AddProduct from "./Pages/AddProduct.jsx";
+import EditProduct from "./Pages/EditProduct.jsx";
 
 function App() {
   return (
