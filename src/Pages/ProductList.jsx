@@ -18,14 +18,12 @@ function ProductList() {
 
   const perPage = 10;
 
-  // 🔹 Receive message from route
   useEffect(() => {
     if (location.state?.message) {
       setFlashMessage(location.state.message);
     }
   }, [location.state]);
 
-  // 🔹 Auto hide message
   useEffect(() => {
     if (flashMessage) {
       const timer = setTimeout(() => setFlashMessage(""), 2000);
@@ -33,7 +31,7 @@ function ProductList() {
     }
   }, [flashMessage]);
 
-  // 🔹 Search debounce
+  // Search debounce
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(search);
@@ -72,7 +70,7 @@ function ProductList() {
       <div className="flex gap-3 mb-4">
         <button
           onClick={() => setView("table")}
-          className={`px-4 py-2 rounded ${
+          className={`px-4 hover:scale-110 transition duration-300 py-2 rounded ${
             view === "table" ? "bg-blue-600 text-white" : "border"
           }`}
         >
@@ -81,8 +79,8 @@ function ProductList() {
 
         <button
           onClick={() => setView("card")}
-          className={`px-4 py-2 rounded ${
-            view === "card" ? "bg-blue-600 text-white" : "border"
+          className={`px-4 py-2 hover:scale-110 transition duration-300 rounded ${
+            view === "card" ? " bg-blue-600 text-white" : "border"
           }`}
         >
           Card
